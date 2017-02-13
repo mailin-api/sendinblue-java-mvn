@@ -5,21 +5,49 @@
   <artifactId>sendinblue</artifactId>
   <packaging>jar</packaging>
   <version>2.0</version>
+
   <name>sendinblue</name>
-  <url>http://maven.apache.org</url>
+  <description>Sendinblue API Wrapper for Java</description>
+  <url>https://github.com/mailin-api/sendinblue-java-mvn</url>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <organization>
+    <name>Sendinblue</name>
+    <url>https://www.sendinblue.com/</url>
+  </organization>
   
   <developers>
       <developer>
           <name>SendinBlue</name>
           <email>developers@sendinblue.com</email>
-          <organization>Sendinblue</organization>
-          <organizationUrl>https://www.sendinblue.com/</organizationUrl>
       </developer>
   </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>     
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/mailin-api/sendinblue-java-mvn/tree/master</url>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+     <id>ossrh</id>
+     <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+     <id>ossrh</id>
+     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+   </distributionManagement>
 
   <dependencies>
 
