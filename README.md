@@ -61,7 +61,9 @@ class MyClass
 }
 ```
 
-```bash compile and execute above java file with Sendinblue API package
+compile and execute above java file with Sendinblue API package
+
+```bash 
 javac -cp '.:sendinblue-2.0.jar' MyClass.java
 java -cp '.:sendinblue-2.0.jar' MyClass
 ```
