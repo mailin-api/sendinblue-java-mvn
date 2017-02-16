@@ -13,7 +13,7 @@ Our maven package is available here http://search.maven.org/#search%7Cga%7C1%7Cs
 
 Add the following to your `pom.xml` file:
 
-```json
+```xml
 {
   ...
   <dependencies>
@@ -23,6 +23,7 @@ Add the following to your `pom.xml` file:
          <version>2.0</version>
       </dependency>
    <dependencies>
+   ...
 }
 ```
 
@@ -40,8 +41,7 @@ Assuming that you have download jar file from above mention URL. You will get a 
 
 craete a file MyClass.java using below code :-
 
-```
-
+```java
 import com.sendinblue.Sendinblue;
 import java.util.*;
 
@@ -59,14 +59,11 @@ class MyClass
 		    System.out.println(" ");
     }
 }
-
 ```
 
-```compile and execute above java file with Sendinblue API package
-
+```bash compile and execute above java file with Sendinblue API package
 javac -cp '.:sendinblue-2.0.jar' MyClass.java
 java -cp '.:sendinblue-2.0.jar' MyClass
-
 ```
 
 ## Support and Feedback
