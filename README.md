@@ -9,7 +9,7 @@ SendinBlue API's use HTTP Authentication through an api key. You can create your
 
 The following recommended installation steps. If you are unfamiliar with maven central repository, see the [About Maven Central Repository](https://www.tutorialspoint.com/maven/maven_repositories.htm).
 
-Our maven package is available here http://search.maven.org/#search|ga|1|g:"com.sendinblue"
+Our maven package is available [click here](http://search.maven.org/#search|ga|1|g:"com.sendinblue")
 
 Add the following to your `pom.xml` file:
 
@@ -32,7 +32,7 @@ Install sendinblue-api and its dependencies
 
 ### Alternative how you can use
 
-You can also download jar package from under download tab from here http://search.maven.org/#search|ga|1|g:"com.sendinblue" locally with the following command:
+You can also download jar package from under download tab from [click here](http://search.maven.org/#search|ga|1|g:"com.sendinblue") locally with the following command:
 
 
 ## Usage
