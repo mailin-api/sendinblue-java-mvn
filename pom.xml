@@ -13,16 +13,13 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <organization>
-    <name>Sendinblue</name>
-    <url>https://www.sendinblue.com/</url>
-  </organization>
   
   <developers>
       <developer>
           <name>SendinBlue</name>
           <email>developers@sendinblue.com</email>
+          <organization> Sendinblue </organization>
+          <organizationUrl>https://www.sendinblue.com/</organizationUrl>
       </developer>
   </developers>
 
@@ -35,16 +32,18 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/mailin-api/sendinblue-java-mvn/tree/master</url>
+    <connection>scm:git:github.com/mailin-api/sendinblue-java-mvn/</connection>
+    <developerConnection>scm:git:github.com/mailin-api/sendinblue-java-mvn/</developerConnection>
+    <url>https://github.com/mailin-api/sendinblue-java-mvn/</url>
   </scm>
 
   <distributionManagement>
     <snapshotRepository>
-     <id>ossrh</id>
+     <id>sendinblue</id>
      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <repository>
-     <id>ossrh</id>
+     <id>sendinblue</id>
      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
    </distributionManagement>
@@ -66,5 +65,57 @@
     </dependency>
 
   </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+         <execution>
+          <id>attach-sources</id>
+          <goals>
+           <goal>jar-no-fork</goal>
+          </goals>
+         </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9.1</version>
+        <executions>
+         <execution>
+          <id>attach-javadocs</id>
+          <goals>
+           <goal>jar</goal>
+          </goals>
+         </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+         <execution>
+          <id>sign-artifacts</id>
+          <phase>verify</phase>
+          <goals>
+           <goal>sign</goal>
+          </goals>
+          <configuration>
+              <keyname>0D21BA26</keyname>
+          </configuration>
+         </execution>
+        </executions>
+      </plugin>
+      
+    </plugins>
+  </build>
 
 </project>

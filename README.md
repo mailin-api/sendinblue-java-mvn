@@ -28,14 +28,14 @@ Add the following to your `pom.xml` file:
 ```
 
 ### Alternative installation
-To download the jar pacakage [here](http://search.maven.org/#search|ga|1|g:"com.sendinblue")
+To download the jar pacakage [click here](http://search.maven.org/#search|ga|1|g:"com.sendinblue")
 
 
 ## Usage
 
-Assuming that you have download jar file from above mention URL. You will get a jar file named by sendinblue-2.0 now compile and execute your file using this package, use below command to execute this package.
+Assuming that you have download jar file from above mention URL. You will get a jar file named sendinblue-2.0.
 
-craete a file MyClass.java using below code :-
+* Create a file MyClass.java using below code :-
 
 ```java
 import com.sendinblue.Sendinblue;
@@ -46,18 +46,18 @@ class MyClass
     public static void main(String[] args)
     {
     	Sendinblue http = new Sendinblue("https://api.sendinblue.com/v2.0","your_api_key");
-	String accountDetail = http.get_account();
-	System.out.println(accountDetail);
-	System.out.println(" ");
+	    String accountDetail = http.get_account();
+	    System.out.println(accountDetail);
+	    System.out.println(" ");
 
-	String smtpDetail = http.get_smtp_details();
-	System.out.println(smtpDetail);
-	System.out.println(" ");
+	    String smtpDetail = http.get_smtp_details();
+	    System.out.println(smtpDetail);
+	    System.out.println(" ");
     }
 }
 ```
 
-compile and execute above java file with Sendinblue API package
+* Compile and execute above java file with Sendinblue API package
 
 ```bash 
 javac -cp '.:sendinblue-2.0.jar' MyClass.java
